@@ -1,0 +1,28 @@
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <div class="panel-title">
+      <h2 id='title'>Incharge Server</h2>
+    </div>
+  </div>
+  <div class="panel-body" style="background-color: #0fe312">
+    <p>
+     <h5 style="color: #ffffff">Welcome in Incharge!</h5>
+    </p>
+  </div>
+</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="conainter-fluid">
+    <div class="navbar-header">
+        <a class="navbar-brand" href="#">Incharge</a>
+    </div>
+    <div class="">
+      <ul class="nav navbar-nav">
+        <li>{{#link-to 'users'}}Users{{/link-to}}</li>
+        <li>{{#link-to 'vehicles'}}Vehicles{{/link-to}}</li>
+        <li>{{#link-to 'charge-points'}}Charge Points{{/link-to}}</li>
+        <li>{{#link-to 'transactions'}}Transactions{{/link-to}}</li>
+      </ul>
+    </div>
+  </div>
+</nav>
+{{outlet}}

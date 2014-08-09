@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>InchargeApp</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    {{BASE_TAG}}
+
+    <link rel="stylesheet" href="assets/vendor.css">
+    <link rel="stylesheet" href="assets/incharge-app.css">
+  </head>
+  <body>
+    <script>
+      window.InchargeAppENV = {{ENV}};
+      window.EmberENV = window.InchargeAppENV.EmberENV;
+    </script>
+    <script src="assets/vendor.js"></script>
+    <script src="assets/incharge-app.js"></script>
+    <script>
+      window.InchargeApp = require('incharge-app/app')['default'].create(InchargeAppENV.APP);
+    </script>
+  </body>
+</html>
